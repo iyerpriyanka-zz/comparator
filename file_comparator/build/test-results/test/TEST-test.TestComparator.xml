@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.TestComparator" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-12T11:32:16" hostname="priyankas-MacBook-Pro.local" time="0.902">
+  <properties/>
+  <testcase name="testCompareSpecialCharacterFiles" classname="test.TestComparator" time="0.902"/>
+  <system-out><![CDATA[Either gfergerg  or  352525sdfrencountered an exceptionConnection refused (Connection refused)
+gfergerg true 352525sdfr
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

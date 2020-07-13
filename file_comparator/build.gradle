@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+}
+
+group 'file_comparator'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useTestNG()
+            {
+                suites  'src/test/testng.xml'
+                useDefaultListeners = true
+                outputDirectory = file("$projectDir/AutomationReport")
+            }
+    reports.html.setDestination(file("$projectDir/GradleReport"))
+    testLogging {
+        events "PASSED", "FAILED", "SKIPPED"
+    }
+}
+
+dependencies {
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+    //restAssured dependency
+    testCompile group: 'io.rest-assured', name: 'rest-assured', version: '3.3.0'
+    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.0'
+    testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '2.9.0'
+}
