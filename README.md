@@ -8,7 +8,7 @@ This repository reads API from two files and compares the API result.
 - Import requirements from build.gradle
 - Install gradle
 
-##Run
+## Run
 ```
 - cd comparator/file_comparator
 ```
