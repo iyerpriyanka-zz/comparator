@@ -13,5 +13,5 @@ This repository reads API from two files and compares the API result.
 - cd comparator/file_comparator
 ```
 ```
-- gradle run
+- $ gradle run
 ```
